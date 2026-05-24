@@ -119,6 +119,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &86847662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100270, guid: c2455b87c898eb646a195c31546b1481,
+    type: 3}
+  m_PrefabInstance: {fileID: 165353600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &165353600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -233,6 +239,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44374dd563c03d64aaff55a08495dd9f, type: 3}
+--- !u!1 &304232523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100378, guid: 44374dd563c03d64aaff55a08495dd9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 220290858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &391732427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -357,6 +369,12 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!1 &499043594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0f58e0fe394b24ed58b332f76fa9c423,
+    type: 3}
+  m_PrefabInstance: {fileID: 1421067833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &568175742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -471,6 +489,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1efd132732334185ad79bc7263913ec, type: 3}
+--- !u!1 &1152948926 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 6f8c40c56b04d4982ae56eadeeb099fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1656645307}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1154547200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -585,6 +609,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db5cc803f9eaf4239ae82229a11bd471, type: 3}
+--- !u!1 &1362354067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: db5cc803f9eaf4239ae82229a11bd471,
+    type: 3}
+  m_PrefabInstance: {fileID: 1160379289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1407982474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -864,6 +894,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2134378501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2035554663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 2b9a716c1d31d45a5b906738bd5ee33e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1407982474}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2092898342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -983,20 +1019,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreFastForward: 1
-  musicPlayerPrefab: {fileID: 100000, guid: 2b9a716c1d31d45a5b906738bd5ee33e, type: 3}
-  mainCameraRigPrefab: {fileID: 100000, guid: 0f58e0fe394b24ed58b332f76fa9c423, type: 3}
+  musicPlayerPrefab: {fileID: 2035554663}
+  mainCameraRigPrefab: {fileID: 499043594}
   prefabsNeedsActivation:
-  - {fileID: 100006, guid: db5cc803f9eaf4239ae82229a11bd471, type: 3}
-  - {fileID: 100270, guid: c2455b87c898eb646a195c31546b1481, type: 3}
+  - {fileID: 1362354067}
+  - {fileID: 86847662}
   prefabsOnTimeline:
-  - {fileID: 100378, guid: 44374dd563c03d64aaff55a08495dd9f, type: 3}
-  - {fileID: 100000, guid: 6f8c40c56b04d4982ae56eadeeb099fb, type: 3}
-  miscPrefabs:
-  - {fileID: 100000, guid: 0329b91dd79424babb86c8dbc3919134, type: 3}
-  - {fileID: 100000, guid: f468251a01e8242df8066e377619a712, type: 3}
-  - {fileID: 100000, guid: f1efd132732334185ad79bc7263913ec, type: 3}
-  - {fileID: 100000, guid: c70aff9297e6d4e9fa6e82c0038ded02, type: 3}
-  - {fileID: 100000, guid: 0291ac2d4e1e54df6bfa4776e3683a24, type: 3}
+  - {fileID: 304232523}
+  - {fileID: 1152948926}
   cameraPoints:
   - {fileID: 1750265709}
   - {fileID: 2112224815}
