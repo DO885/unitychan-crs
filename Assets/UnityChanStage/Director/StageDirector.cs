@@ -12,7 +12,6 @@ public class StageDirector : MonoBehaviour
     public GameObject mainCameraRigPrefab;
     public GameObject[] prefabsNeedsActivation;
     public GameObject[] prefabsOnTimeline;
-    public GameObject[] miscPrefabs;
 
     // Camera points.
     public Transform[] cameraPoints;
@@ -30,21 +29,19 @@ public class StageDirector : MonoBehaviour
     void Awake()
     {
         // Instantiate the prefabs.
-        musicPlayer = (GameObject)Instantiate(musicPlayerPrefab);
+        musicPlayer = musicPlayerPrefab;
 
-        var cameraRig = (GameObject)Instantiate(mainCameraRigPrefab);
+        var cameraRig = mainCameraRigPrefab;
         mainCameraSwitcher = cameraRig.GetComponentInChildren<CameraSwitcher>();
         screenOverlays = cameraRig.GetComponentsInChildren<ScreenOverlay>();
 
         objectsNeedsActivation = new GameObject[prefabsNeedsActivation.Length];
         for (var i = 0; i < prefabsNeedsActivation.Length; i++)
-            objectsNeedsActivation[i] = (GameObject)Instantiate(prefabsNeedsActivation[i]);
+            objectsNeedsActivation[i] = prefabsNeedsActivation[i];
 
         objectsOnTimeline = new GameObject[prefabsOnTimeline.Length];
         for (var i = 0; i < prefabsOnTimeline.Length; i++)
-            objectsOnTimeline[i] = (GameObject)Instantiate(prefabsOnTimeline[i]);
-
-        foreach (var p in miscPrefabs) Instantiate(p);
+            objectsOnTimeline[i] = prefabsOnTimeline[i];
     }
 
     void Update()
